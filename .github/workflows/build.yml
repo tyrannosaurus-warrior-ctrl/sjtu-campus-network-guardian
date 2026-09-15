@@ -22,7 +22,7 @@ jobs:
         shell: pwsh
         run: .\Build-Release.ps1
       - name: Upload package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: SJTU-Network-Guardian-win-x64
           path: artifacts/SJTU-Network-Guardian-*.zip*
