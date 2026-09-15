@@ -1,0 +1,16 @@
+# Build output
+app/bin/
+app/obj/
+artifacts/
+publish/
+
+# Local test/install data
+*.etl
+*.log
+*.zip
+guardian-*.json
+*.user
+
+# Never publish machine-specific backups or diagnostics
+backups/
+*.clixml

@@ -1,0 +1,27 @@
+name: 问题报告
+description: 报告安装、网络状态或界面问题（请先脱敏）
+body:
+  - type: markdown
+    attributes:
+      value: "不要提交 IP、MAC、校园账号、代理订阅、原始抓包或完整 ProgramData 文件夹。安全问题请勿公开报告。"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 11 23H2
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: 网络类型
+      options: [有线, Wi-Fi, 两者都有]
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 发生了什么？
+      description: 请写操作步骤、实际结果和预期结果。
+    validations:
+      required: true
